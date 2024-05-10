@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Travel.co</title>
+    <title>Web Design Mastery | Travel.com</title>
     <style>@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
 
         :root {
@@ -33,6 +33,8 @@
           padding: 5rem 1rem;
           max-width: var(--max-width);
           margin: auto;
+          background-image: url(photo4.avif);
+          background-size: cover;
         }
         
         .section__title {
@@ -84,6 +86,11 @@
           align-items: center;
           gap: 2rem;
         }
+        .nav__links a {
+          color: inherit;
+          text-decoration: none;
+
+        }
         
         .link {
           color: var(--extra-light);
@@ -124,12 +131,15 @@
         }
         
         .header__content h1 {
+          color: black;
           font-size: 5rem;
           font-weight: 400;
           line-height: 5rem;
         }
         
         .header__content p {
+          color: black;
+
           text-align: center;
         }
         
@@ -304,6 +314,7 @@
         @media (min-width: 640px) {
           .nav__links {
             display: flex;
+            color: black;
           }
         
           header .section__container {
@@ -354,6 +365,7 @@
             align-items: flex-end;
             text-align: right;
             max-width: 800px;
+            
           }
         
           .display__card {
@@ -373,6 +385,10 @@
           .display__card {
             gap: 1rem;
           }
+          .a{
+            color: black;
+            text-decoration: none;
+          }
         
           .display__card i {
             font-size: 3rem;
@@ -385,24 +401,44 @@
           .display__card p {
             font-size: 1rem;
           }
-        }</style>
+        }
+        p{
+          color: black;
+        }
+        
+        h4{
+          color: black;
+        }
+        .social__icons{
+          color: black;
+        }
+        p.section__subtitle{
+          color: #000;
+        }
+        h2.section__title{
+          color: #000;
+        }
+        h2{
+          color: #000;
+        }
+          </style>
   </head>
   <body>
     <nav>
       <div class="nav__logo"><a href="#">Travel.com</a></div>
       <ul class="nav__links">
-        <li class="link">Home</li>
-        <li class="link">Blog</li>
-        <li class="link">Offers</li>
-        <li class="link">Services</li>
-        <li class="link">Contacts</li>
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="offer.html">Offers</a>
+    
+        <a href="contact.html">Contacts</a>
       </ul>
     </nav>
     <header>
       <div class="section__container">
         <div class="header__content">
           <h1>Travel</h1>
-          <p>
+          <p style="text-align: justify;">
             Embark on a journey of a lifetime and explore the world's most
             breathtaking destinations with our expert travel advice. From exotic
             beaches to cultural wonders, we've got you covered with our
@@ -475,7 +511,7 @@
             hotels, and packages. Don't wait, book now and experience the
             adventure of a lifetime without breaking the bank.
           </p>
-          <button>See Tours</button>
+          <button style="color: #000;"><a href="tour.html">see Tours</a></button>
         </div>
       </div>
     </section>
@@ -527,3 +563,6 @@
     </footer>
   </body>
 </html>
+
+
+
